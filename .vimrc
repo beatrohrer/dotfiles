@@ -11,9 +11,14 @@ set hlsearch "highlight all search matches
 set mouse=a
 set wildmode=full
 
+filetype plugin indent on
+
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
 " remap keys
-inoremap jk <ESC>
+" imap jk <Esc>
 let mapleader = "\<Space>"
+
+" load pathogen
+execute pathogen#infect()
