@@ -1,19 +1,3 @@
-# Custom #
-##########
-
-alias checkssl='openssl s_client -showcerts -connect'
-alias ll='ls -lah'
-alias a2restart='/etc/init.d/apache2 restart'
-alias a2reload='/etc/init.d/apache2 reload'
-
-# gnb = git new branch
-# create new git branch and push to origin
-gnb() { git checkout -b "$@" && git push --set-upstream origin "$@" }
-alias glb='git for-each-ref --sort=-committerdate refs/heads/ | head | sed "s/.*refs\/heads\///g"'
-
-# Typo3 6.2
-alias cleartypocache='rm -r typo3temp/Cache/*; rm typo3temp/locks/*'
-
 # Oh-My-Zsh #
 #############
 
@@ -66,11 +50,26 @@ plugins=(git brew colored-man osx sublime)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# Custom #
+##########
+
+alias checkssl='openssl s_client -showcerts -connect'
+alias ll='ls -lah'
+alias a2restart='/etc/init.d/apache2 restart'
+alias a2reload='/etc/init.d/apache2 reload'
+
+# gnb = git new branch
+# create new git branch and push to origin
+gnb() { git checkout -b "$@" && git push --set-upstream origin "$@" }
+alias glb='git for-each-ref --sort=-committerdate refs/heads/ | head | sed "s/.*refs\/heads\///g"'
+
+# Typo3 6.2
+alias cleartypocache='rm -r typo3temp/Cache/*; rm typo3temp/locks/*'
 export PATH=$PATH:/usr/local/share/npm/bin:/opt/X11/bin
 
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
+
 
 # source extra config
 FILE=~/.zshrc_aux
