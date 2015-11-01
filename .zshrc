@@ -1,0 +1,1 @@
+beatconf/.zshrc
