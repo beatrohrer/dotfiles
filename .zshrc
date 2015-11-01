@@ -53,10 +53,17 @@ source $ZSH/oh-my-zsh.sh
 # Custom #
 ##########
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 alias checkssl='openssl s_client -showcerts -connect'
 alias ll='ls -lah'
 alias a2restart='/etc/init.d/apache2 restart'
 alias a2reload='/etc/init.d/apache2 reload'
+
+function cv () {
+  cdargs "$1" && cd "`cat "$HOME/.cdargsresult"`" ;
+}
 
 # gnb = git new branch
 # create new git branch and push to origin
