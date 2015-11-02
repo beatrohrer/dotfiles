@@ -61,10 +61,6 @@ alias ll='ls -lah'
 alias a2restart='/etc/init.d/apache2 restart'
 alias a2reload='/etc/init.d/apache2 reload'
 
-function cv () {
-  cdargs "$1" && cd "`cat "$HOME/.cdargsresult"`" ;
-}
-
 # gnb = git new branch
 # create new git branch and push to origin
 gnb() { git checkout -b "$@" && git push --set-upstream origin "$@" }
@@ -77,6 +73,8 @@ export PATH=$PATH:/usr/local/share/npm/bin:/opt/X11/bin
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 
+# source cdargs config
+source ~/dotfiles/scripts/cdargs-bash.sh
 
 # source extra config
 FILE=~/.zshrc_aux
