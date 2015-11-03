@@ -18,6 +18,7 @@ cmap w!! w !sudo tee > /dev/null %
 
 " remap keys
 " imap jk <Esc>
+nmap \ $
 let mapleader = "\<Space>"
 
 " load pathogen
