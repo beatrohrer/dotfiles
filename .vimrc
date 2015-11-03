@@ -7,9 +7,19 @@ set ruler
 set smartcase "do a case insensitive search when only lowercase chars, but case sensitive if uppercase chars exist
 set cursorline "underline current line
 set tabstop=2
-set hlsearch "highlight all search matches
 set mouse=a
 set wildmode=full
+set showcmd "show command in bottom bar
+set wildmenu "visual autocomplete for command menu
+set lazyredraw "redraw only when we need to
+set showmatch "highlight matching [{()}]
+
+" Searching
+" ---------
+" turn off search highlight
+set incsearch "search as characters are entered
+set hlsearch "highlight all search matches
+nnoremap <leader><space> :nohlsearch<CR>
 
 filetype plugin indent on
 
