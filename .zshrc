@@ -65,6 +65,9 @@ alias a2reload='/etc/init.d/apache2 reload'
 # create new git branch and push to origin
 gnb() { git checkout -b "$@" && git push --set-upstream origin "$@" }
 alias glb='git for-each-ref --sort=-committerdate refs/heads/ | head | sed "s/.*refs\/heads\///g"'
+pullall() {
+  git pull "$@" && git submodule update --init --recursive
+}
 
 # Typo3 6.2
 alias cleartypocache='rm -r typo3temp/Cache/*; rm typo3temp/locks/*'
