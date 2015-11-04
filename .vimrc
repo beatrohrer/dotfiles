@@ -1,7 +1,7 @@
 " Vundle
 " ------
-set nocompatible "be iMproved, required by vundle
-filetype off "required by vundle
+set nocompatible " be iMproved, required by vundle
+filetype off     " required by vundle
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -17,21 +17,21 @@ Plugin 'plasticboy/vim-markdown'
 call vundle#end()            " required by Vundle
 filetype plugin indent on    " required by Vundle
 
-set autoindent "this sets the autoindent option
-syntax on "activate syntax highlighting
-set background=dark "enable color scheme for dark terminal windows
-colorscheme solarized "use theme from http://ethanschoonover.com/solarized
-set number "activate line numbers
+set autoindent        " this sets the autoindent option
+syntax on             " activate syntax highlighting
+set background=dark   " enable color scheme for dark terminal windows
+colorscheme solarized " use theme from http://ethanschoonover.com/solarized
+set number            " activate line numbers
 set ruler
-set smartcase "do a case insensitive search when only lowercase chars, but case sensitive if uppercase chars exist
-set cursorline "underline current line
+set smartcase         " do a case insensitive search when only lowercase chars, but case sensitive if uppercase chars exist
+set cursorline        " underline current line
 set tabstop=2
 set mouse=a
 set wildmode=full
-set showcmd "show command in bottom bar
-set wildmenu "visual autocomplete for command menu
-set lazyredraw "redraw only when we need to
-set showmatch "highlight matching [{()}]
+set showcmd           " show command in bottom bar
+set wildmenu          " visual autocomplete for command menu
+set lazyredraw        " redraw only when we need to
+set showmatch         " highlight matching [{()}]
 
 " Searching
 " ---------
@@ -51,3 +51,9 @@ let g:ctrlp_cmd = 'CtrlP'
 " imap jk <Esc>
 nmap \ $
 let mapleader = "\<Space>"
+
+" Window Navigation
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
