@@ -11,6 +11,8 @@ Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()            " required by Vundle
 filetype plugin indent on    " required by Vundle
