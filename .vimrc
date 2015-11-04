@@ -1,3 +1,19 @@
+" Vundle
+" ------
+set nocompatible "be iMproved, required by vundle
+filetype off "required by vundle
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()            " required by Vundle
+filetype plugin indent on    " required by Vundle
+
 set autoindent "this sets the autoindent option
 syntax on "activate syntax highlighting
 set background=dark "enable color scheme for dark terminal windows
@@ -21,8 +37,6 @@ set incsearch "search as characters are entered
 set hlsearch "highlight all search matches
 nnoremap <leader><space> :nohlsearch<CR>
 
-filetype plugin indent on
-
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
@@ -30,6 +44,3 @@ cmap w!! w !sudo tee > /dev/null %
 " imap jk <Esc>
 nmap \ $
 let mapleader = "\<Space>"
-
-" load pathogen
-execute pathogen#infect()
