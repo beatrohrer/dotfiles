@@ -79,6 +79,9 @@ export LANG=en_US.UTF-8
 # source cdargs config
 source ~/dotfiles/scripts/cdargs-bash.sh
 
+# source iTerm2 shell integration
+source ~/dotfiles/iterm2_shell_integration.zsh
+
 # source extra config
 FILE=~/.zshrc_aux
 if [ -f $FILE ]; then
