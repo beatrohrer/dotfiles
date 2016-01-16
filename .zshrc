@@ -10,7 +10,7 @@ ZSH=$HOME/dotfiles/oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="fishy"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -60,6 +60,12 @@ alias checkssl='openssl s_client -showcerts -connect'
 alias ll='ls -lah'
 alias a2restart='/etc/init.d/apache2 restart'
 alias a2reload='/etc/init.d/apache2 reload'
+
+# Git
+export GIT_AUTHOR_NAME="Beat Rohrer"
+export GIT_AUTHOR_EMAIL="beat.rohrer@zhdk.ch"
+export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
 # gnb = git new branch
 # create new git branch and push to origin
