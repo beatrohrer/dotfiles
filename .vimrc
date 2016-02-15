@@ -15,24 +15,24 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
-call vundle#end()            " required by Vundle
-filetype plugin indent on    " required by Vundle
+call vundle#end()           " required by Vundle
+filetype plugin indent on   " required by Vundle
 
-set autoindent        " this sets the autoindent option
-syntax on             " activate syntax highlighting
-set background=dark   " enable color scheme for dark terminal windows
-colorscheme PaperColor " set the color scheme
-set number            " activate line numbers
+set autoindent              " this sets the autoindent option
+syntax on                   " activate syntax highlighting
+set background=dark         " enable color scheme for dark terminal windows
+colorscheme PaperColor      " set the color scheme
+set number                  " activate line numbers
 set ruler
-set smartcase         " do a case insensitive search when only lowercase chars, but case sensitive if uppercase chars exist
-set cursorline        " underline current line
+set smartcase               " do a case insensitive search when only lowercase chars, but case sensitive if uppercase chars exist
+set cursorline              " underline current line
 set tabstop=2
 set mouse=a
 set wildmode=full
-set showcmd           " show command in bottom bar
-set wildmenu          " visual autocomplete for command menu
-set lazyredraw        " redraw only when we need to
-set showmatch         " highlight matching [{()}]
+set showcmd                 " show command in bottom bar
+set wildmenu                " visual autocomplete for command menu
+set lazyredraw              " redraw only when we need to
+set showmatch               " highlight matching [{()}]
 
 " Searching
 " ---------
