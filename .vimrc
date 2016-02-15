@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -20,7 +21,7 @@ filetype plugin indent on    " required by Vundle
 set autoindent        " this sets the autoindent option
 syntax on             " activate syntax highlighting
 set background=dark   " enable color scheme for dark terminal windows
-colorscheme solarized " use theme from http://ethanschoonover.com/solarized
+colorscheme PaperColor " set the color scheme
 set number            " activate line numbers
 set ruler
 set smartcase         " do a case insensitive search when only lowercase chars, but case sensitive if uppercase chars exist

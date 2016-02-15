@@ -56,7 +56,7 @@ source $ZSH/oh-my-zsh.sh
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-alias checkssl='openssl s_client -showcerts -connect'
+alias checkssl='nmap --script ssl-cert,ssl-enum-ciphers -p 443'
 alias ll='ls -lah'
 alias a2restart='/etc/init.d/apache2 restart'
 alias a2reload='/etc/init.d/apache2 reload'
