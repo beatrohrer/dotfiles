@@ -14,6 +14,7 @@ Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()           " required by Vundle
 filetype plugin indent on   " required by Vundle
