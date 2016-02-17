@@ -15,6 +15,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()           " required by Vundle
 filetype plugin indent on   " required by Vundle
@@ -28,7 +31,7 @@ set ruler
 set smartcase               " do a case insensitive search when only lowercase chars, but case sensitive if uppercase chars exist
 set cursorline              " underline current line
 set tabstop=2
-set mouse=a
+"set mouse=a
 set wildmode=full
 set showcmd                 " show command in bottom bar
 set wildmenu                " visual autocomplete for command menu
@@ -59,3 +62,21 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Airline configuration
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+
+" Markdown
+let g:vim_markdown_folding_disabled = 1
+
