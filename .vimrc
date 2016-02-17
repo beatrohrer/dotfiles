@@ -31,7 +31,7 @@ set ruler
 set smartcase               " do a case insensitive search when only lowercase chars, but case sensitive if uppercase chars exist
 set cursorline              " underline current line
 set tabstop=2
-"set mouse=a
+set mouse=
 set wildmode=full
 set showcmd                 " show command in bottom bar
 set wildmenu                " visual autocomplete for command menu
