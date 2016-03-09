@@ -60,6 +60,9 @@ alias checkssl='nmap --script ssl-cert,ssl-enum-ciphers -p 443'
 alias ll='ls -lah'
 alias a2restart='/etc/init.d/apache2 restart'
 alias a2reload='/etc/init.d/apache2 reload'
+ 
+# NTP
+alias ntpforceupdate='service ntp stop && ntpd -gq && service ntp start'
 
 # Git
 export GIT_AUTHOR_NAME="Beat Rohrer"
