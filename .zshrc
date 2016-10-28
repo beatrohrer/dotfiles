@@ -58,6 +58,8 @@ export EDITOR="$VISUAL"
 
 alias checkssl='nmap --script ssl-cert,ssl-enum-ciphers -p 443'
 alias ll='ls -lah'
+alias llt='ls -laht'
+alias llth='ls -laht | head -20'
 alias a2restart='/etc/init.d/apache2 restart'
 alias a2reload='/etc/init.d/apache2 reload'
  
