@@ -60,8 +60,8 @@ alias checkssl='nmap --script ssl-cert,ssl-enum-ciphers -p 443'
 alias ll='ls -lah'
 alias llt='ls -laht'
 alias llth='ls -laht | head -20'
-alias a2restart='/etc/init.d/apache2 restart'
-alias a2reload='/etc/init.d/apache2 reload'
+alias a2restart='sudo service apache2 restart'
+alias a2reload='sudo service apache2 reload'
  
 # NTP
 alias ntpforceupdate='service ntp stop && ntpd -gq && service ntp start'
