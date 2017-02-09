@@ -62,6 +62,7 @@ alias llt='ls -laht'
 alias llth='ls -laht | head -20'
 alias a2restart='sudo service apache2 restart'
 alias a2reload='sudo service apache2 reload'
+alias sus='sort | uniq -c | sort -n'
  
 # NTP
 alias ntpforceupdate='service ntp stop && ntpd -gq && service ntp start'
