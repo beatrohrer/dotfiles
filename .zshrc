@@ -73,12 +73,15 @@ export GIT_AUTHOR_EMAIL="beat.rohrer@zhdk.ch"
 export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
-# gnb = git new branch
+# gnb = Git New Branch
 # create new git branch and push to origin
-gnb() { git checkout -b "$@" && git push --set-upstream origin "$@" }
+gnb() {
+  git checkout -b "$@" && git push --set-upstream origin "$@"
+}
+
 alias glb='git for-each-ref --sort=-committerdate refs/heads/ | head | sed "s/.*refs\/heads\///g"'
 
-# Git puLl All
+# gpa = Git Pull All
 gla() {
   git pull "$@" && git submodule update --init --recursive
 }
