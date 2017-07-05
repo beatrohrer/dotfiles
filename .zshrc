@@ -79,7 +79,10 @@ gnb() {
   git checkout -b "$@" && git push --set-upstream origin "$@"
 }
 
+# Git Last Branch
 alias glb='git for-each-ref --sort=-committerdate refs/heads/ | head | sed "s/.*refs\/heads\///g"'
+# Git Push All remotes
+alias gpa='git remote | xargs -L 1 git push'
 
 # gpa = Git Pull All
 gla() {
