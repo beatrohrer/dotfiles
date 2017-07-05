@@ -18,6 +18,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()           " required by Vundle
 filetype plugin indent on   " required by Vundle
