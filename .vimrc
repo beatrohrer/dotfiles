@@ -32,16 +32,18 @@ set ruler
 set smartcase               " do a case insensitive search when only lowercase chars, but case sensitive if uppercase chars exist
 set cursorline              " underline current line
 set tabstop=2
-set mouse=
+set mouse=a                 " enable mouse reporting; use alt+click (Mac) to prevent mouse reporting for a single click
 set wildmode=full
 set showcmd                 " show command in bottom bar
 set wildmenu                " visual autocomplete for command menu
 set lazyredraw              " redraw only when we need to
 set showmatch               " highlight matching [{()}]
 
+" Give a shortcut key to NERD Tree
+map <F2> :NERDTreeToggle<CR>
+
 " Searching
 " ---------
-" turn off search highlight
 set incsearch "search as characters are entered
 set hlsearch "highlight all search matches
 nnoremap <leader><space> :nohlsearch<CR>
