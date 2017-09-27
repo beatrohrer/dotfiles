@@ -81,12 +81,21 @@ gnb() {
 
 # Git Last Branch
 alias glb='git for-each-ref --sort=-committerdate refs/heads/ | head | sed "s/.*refs\/heads\///g"'
+
 # Git Push All remotes
 alias gpa='git remote | xargs -L 1 git push'
+
+# Git Commit Merge Request
+# i.e. commit a change an copy the hash to the clipboard
+alias gcmr='git add . && git commit && git push && git show head | head -1 | cut -d " " -f 2 | tr -d "\n" | pbcopy'
 
 # gpa = Git Pull All
 gla() {
   git pull "$@" && git submodule update --init --recursive
+}
+
+notify() {
+  /usr/bin/osascript -e "display notification \"$@\""
 }
 
 # Typo3 6.2
