@@ -56,6 +56,11 @@ source $ZSH/oh-my-zsh.sh
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Ansible #
+############
+
+export ANSIBLE_NOCOWS=1
+
 alias checkssl='nmap --script ssl-cert,ssl-enum-ciphers -p 443'
 alias ll='ls -lah'
 alias llt='ls -laht'
@@ -64,6 +69,10 @@ alias a2restart='sudo service apache2 restart'
 alias a2reload='sudo service apache2 reload'
 alias sus='sort | uniq -c | sort -n'
  
+grepip() {
+	find . -type f | parallel --will-cite -k -j150% -n 1000 -m grep -Hni $1 {}
+}
+
 # NTP
 alias ntpforceupdate='service ntp stop && ntpd -gq && service ntp start'
 
@@ -87,7 +96,7 @@ alias gpa='git remote | xargs -L 1 git push'
 
 # Git Commit Merge Request
 # i.e. commit a change an copy the hash to the clipboard
-alias gcmr='git add . && git commit && git push && git show head | head -1 | cut -d " " -f 2 | tr -d "\n" | pbcopy'
+alias gcmr='git add . && git commit -v && git push && git show head | head -1 | cut -d " " -f 2 | tr -d "\n" | pbcopy'
 
 # gpa = Git Pull All
 gla() {
@@ -100,7 +109,12 @@ notify() {
 
 # Typo3 6.2
 alias cleartypocache='rm -r typo3temp/Cache/*; rm typo3temp/locks/*'
+
+# add to path
+# npm
 export PATH=$PATH:/usr/local/share/npm/bin:/opt/X11/bin
+# private bins
+export PATH=$PATH:~/bin
 
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
