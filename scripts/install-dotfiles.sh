@@ -1,6 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
-# set symlings
+sudo apt-get update && \
+  sudo apt-get upgrade && \
+  sudo apt-get install vim zsh tree tmux cdargs git
+
+# set symlinks
 ln -s ~/dotfiles/.vim ~/.vim
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
@@ -8,4 +12,7 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # install vim plugins
 
-vim +PlugInstall +qall
+vim +PluginInstall +qall 2> /dev/null
+
+# select zsh as default shell 
+command -v zsh >/dev/null 2>&1 && chsh -s $(which zsh)
