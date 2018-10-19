@@ -12,7 +12,7 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # install vim plugins
 
-vim +PluginInstall +qall 2> /dev/null
+vim +PluginInstall +qall 
 
 # select zsh as default shell 
 command -v zsh >/dev/null 2>&1 && chsh -s $(which zsh)
