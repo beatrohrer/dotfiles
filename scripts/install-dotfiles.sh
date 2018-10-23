@@ -2,7 +2,7 @@
 
 sudo apt-get update && \
   sudo apt-get upgrade -y && \
-  sudo apt-get install -y vim zsh tree tmux cdargs git
+  sudo apt-get install -y vim zsh tree tmux cdargs git curl httpie
 
 # set symlinks
 ln -s ~/dotfiles/.vim ~/.vim
