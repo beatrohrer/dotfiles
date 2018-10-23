@@ -10,6 +10,11 @@ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+# ssh pub keys
+
+mkdir ~/.ssh 2> /dev/null
+cp ~/dotfiles/ssh/authorized_keys ~/.ssh/
+
 # install vim plugins
 
 vim +PluginInstall +qall 
