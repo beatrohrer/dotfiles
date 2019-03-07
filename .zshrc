@@ -61,6 +61,8 @@ export EDITOR="$VISUAL"
 
 export ANSIBLE_NOCOWS=1
 
+# Stuff
+alias myip='curl https://ipinfo.io/ip'
 alias checkssl='nmap --script ssl-cert,ssl-enum-ciphers -p 443'
 alias ll='ls -lah'
 alias llt='ls -laht'
