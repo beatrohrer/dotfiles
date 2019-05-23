@@ -109,6 +109,10 @@ notify() {
   /usr/bin/osascript -e "display notification \"$@\""
 }
 
+cheat() {
+	curl cheat.sh/$@
+}
+
 # Typo3 6.2
 alias cleartypocache='rm -r typo3temp/Cache/*; rm typo3temp/locks/*'
 
