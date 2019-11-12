@@ -46,7 +46,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git brew colored-man node npm osx rvm sublime autojump)
-plugins=(git brew colored-man osx sublime)
+plugins=(git brew osx sublime)
 
 source $ZSH/oh-my-zsh.sh
 
