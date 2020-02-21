@@ -70,6 +70,7 @@ alias llth='ls -laht | head -20'
 alias a2restart='sudo service apache2 restart'
 alias a2reload='sudo service apache2 reload'
 alias sus='sort | uniq -c | sort -n'
+alias watchdots='fswatch *.dot | xargs -I{} sh -c "dot -Tpng -O \"{}\" && open \"{}.png\""'
  
 grepip() {
 	find . -type f | parallel --will-cite -k -j150% -n 1000 -m grep -Hni $1 {}
