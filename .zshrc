@@ -46,7 +46,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git brew colored-man node npm osx rvm sublime autojump)
-plugins=(git brew osx sublime)
+plugins=(git brew macos sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,6 +100,9 @@ alias gpa='git remote | xargs -L 1 git push'
 # Git Commit Merge Request
 # i.e. commit a change an copy the hash to the clipboard
 alias gcmr='git add . && git commit -v && git push && git show head | head -1 | cut -d " " -f 2 | tr -d "\n" | pbcopy'
+
+# Git push and copy last commit hash to clipboard
+alias gplh='git push && git show head | head -1 | cut -d " " -f 2 | tr -d "\n" | pbcopy'
 
 # gpa = Git Pull All
 gla() {
