@@ -8,17 +8,17 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
-Plugin 'scrooloose/nerdtree'
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'scrooloose/nerdtree'
+" Plugin 'altercation/vim-colors-solarized'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'kien/ctrlp.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
+" Plugin 'godlygeek/tabular'
+" Plugin 'plasticboy/vim-markdown'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'rust-lang/rust.vim'
+" Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'rust-lang/rust.vim'
 
 call vundle#end()           " required by Vundle
 filetype plugin indent on   " required by Vundle
